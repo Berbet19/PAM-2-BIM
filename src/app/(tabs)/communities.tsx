@@ -3,7 +3,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
+      <View>
       <Text style={styles.title}>Comunidades</Text>
+      </View>
     </View>
   );
 }

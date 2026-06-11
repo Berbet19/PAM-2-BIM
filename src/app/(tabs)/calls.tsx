@@ -2,9 +2,16 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function HomeScreen() {
   return (
+   
+
     <View style={styles.container}>
+      <View>
       <Text style={styles.title}>Meu Projeto Começa Aqui!</Text>
+      </View>
     </View>
+
+
+   
   );
 }
 
@@ -12,7 +19,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    
     alignItems: 'center',
     backgroundColor: '#fff',
   },

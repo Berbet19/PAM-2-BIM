@@ -3,7 +3,17 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
+     <View>
       <Text style={styles.title}>Meu Projeto Começa Aqui!</Text>
+      </View>
+
+      <View>
+      <Text style={styles.title}>Meu Projeto Começa Aqui!</Text>
+      </View>
+
+      <View>
+      <Text style={styles.title}>Meu Projeto Começa Aqui!</Text>
+      </View>
     </View>
   );
 }
@@ -12,12 +22,14 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
+  marginLeft: 10,
+    backgroundColor: '#000000',
+    gap: 10,
   },
   title: {
-    fontSize: 24,
-    fontWeight: 'bold',
+    fontSize: 20,
+    color: '#ffffff',
+    backgroundColor: '#252424',
+  
   },
 });

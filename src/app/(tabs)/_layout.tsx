@@ -3,11 +3,13 @@ import { Ionicons } from '@expo/vector-icons';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import Octicons from '@expo/vector-icons/Octicons';
 import Feather from '@expo/vector-icons/Feather';
+import { StyleSheet } from 'react-native';
 
 export default function TabsLayout() {
   return (
-    <Tabs screenOptions={{  tabBarActiveTintColor: '#075E54'}}>
-      <Tabs.Screen
+    <Tabs screenOptions={{  tabBarActiveTintColor: '#075E54', tabBarStyle:{backgroundColor: '#0000'} }   }>
+
+      <Tabs.Screen 
         name="index"
         options={{
           title: 'WhatsApp',
@@ -43,5 +45,14 @@ export default function TabsLayout() {
 
   )
 }
+
+const styles = StyleSheet.create({
+ screen :{
+
+ }
+}
+)
+
+
     
    
