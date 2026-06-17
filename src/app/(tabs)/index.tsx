@@ -14,8 +14,8 @@ export default function HomeScreen() {
   return (
    
     <View style={styles.container}>
-    
-      <ScrollView 
+    <View  style={styles.filtros}>
+      <ScrollView  
   horizontal 
   showsHorizontalScrollIndicator={false}
   contentContainerStyle={{ paddingHorizontal: 16 }}
@@ -27,23 +27,21 @@ export default function HomeScreen() {
         <MeuBotao buttontext="+" />
 
 </ScrollView>
-       
-
-      
+       </View>
+<View style={styles.contatos} >
+    <ScrollView  showsVerticalScrollIndicator={false}    
+  bounces={true}   contentContainerStyle={ styles.scrollcontatos}  >
      <View style={styles.Rowcontainer}>
       <Image style={styles.img} source={require ('../../../assets/images/Contacts.png')}/>
       <Text style={styles.title}>Contato 1 </Text>
       </View>
-
       <Text style={styles.subtitle}><Ionicons name="checkmark-done-outline" size={15} color="grey" />Estou saindo!</Text>
-     
-    
+
 <View style={styles.Rowcontainer}>
       <Image style={styles.img} source={require ('../../../assets/images/Contacts.png')}/>
       <Text style={styles.title}>Contato 2 </Text>
       </View>
-      <Text style={styles.subtitle}><Ionicons name="checkmark-done-outline" size={15} color="grey" />HELLO</Text>
-
+      <Text style={styles.subtitle}> <Ionicons name="checkmark-done-outline" size={15} color=" grey" />HELLO</Text>
       <View style={styles.Rowcontainer}>
       <Image style={styles.img} source={require ('../../../assets/images/Contacts.png')}/>
       <Text style={styles.title}>Contato 3</Text>
@@ -60,10 +58,53 @@ export default function HomeScreen() {
       <Image style={styles.img} source={require ('../../../assets/images/Contacts.png')}/>
       <Text style={styles.title}>Contato 5</Text>
       </View>
-      <Text style={styles.subtitle}></Text>
-      
+         <Text style={styles.subtitle}>oi</Text>
 
-    </View>
+
+         <View style={styles.Rowcontainer}>
+      <Image style={styles.img} source={require ('../../../assets/images/Contacts.png')}/>
+      <Text style={styles.title}>Contato 5</Text>
+      </View>
+         <Text style={styles.subtitle}>oi</Text>
+
+
+         <View style={styles.Rowcontainer}>
+      <Image style={styles.img} source={require ('../../../assets/images/Contacts.png')}/>
+      <Text style={styles.title}>Contato 5</Text>
+      </View>
+         <Text style={styles.subtitle}>oi</Text>
+
+
+
+
+         <View style={styles.Rowcontainer}>
+      <Image style={styles.img} source={require ('../../../assets/images/Contacts.png')}/>
+      <Text style={styles.title}>Contato 5</Text>
+      </View>
+         <Text style={styles.subtitle}>oi</Text>
+
+
+         <View style={styles.Rowcontainer}>
+      <Image style={styles.img} source={require ('../../../assets/images/Contacts.png')}/>
+      <Text style={styles.title}>Contato 5</Text>
+      </View>
+         <Text style={styles.subtitle}>oi</Text>
+
+
+
+         <View style={styles.Rowcontainer}>
+      <Image style={styles.img} source={require ('../../../assets/images/Contacts.png')}/>
+      <Text style={styles.title}>Contato 5</Text>
+      </View>
+         <Text style={styles.subtitle}>oi</Text>
+       </ScrollView>
+ </View>
+ </View>
+
+
+    
+
+    
   );
 }
 
@@ -115,10 +156,26 @@ const styles = StyleSheet.create({
   },
 
 subtitle:{
-fontSize: 10,
+fontSize: 15,
 color: 'grey' ,
 flex: 1,
 paddingLeft: 60,
+paddingTop: 2,
 },
 
+contatos:{
+
+   flexDirection: 'column', 
+    gap: 8, 
+      marginTop: 4,   
+},
+filtros:{
+   height: 48,      
+    justifyContent: 'center', 
+    marginVertical: 4,   
+},
+
+scrollcontatos:{
+ flex: 1,
+},
 })

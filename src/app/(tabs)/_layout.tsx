@@ -50,17 +50,21 @@ export default function TabsLayout() {
          <View style={styles.row}>
         <Text style={styles.headerTitleText}>WhatsApp</Text>
         <View style={styles.botoesHeader}>
-        <EvilIcons name="search" size={24} color="#a0c4c0" />
+        <Feather name="camera" size={24} color="#a0c4c0" />
         <Feather name="more-vertical" size={24} color="#a0c4c0" />
        </View>
         </View>
         
         <TextInput
           style={styles.searchbar}
+          
           placeholder="Pesquisar..."
           placeholderTextColor="#a0c4c0"
           editable={false}
+         
         />
+         
+       
         
       </View> 
       </SafeAreaView>
@@ -75,6 +79,23 @@ export default function TabsLayout() {
         options={{
           title: 'Atualizações',
           tabBarIcon: ({ color }) => <Octicons name="sync" size={26} color={color} />,
+
+    header: () => (
+      <SafeAreaView>
+       <View style={styles.customHeaderUpdates}>
+         <View style={styles.row}>
+        <Text style={styles.headerTitleText}>Atualizações</Text>
+        <View style={styles.botoesHeader}>
+        <EvilIcons name="search" size={24} color="#a0c4c0" />
+        <Feather name="more-vertical" size={24} color="#a0c4c0" />
+       </View>
+        </View>
+         </View> 
+      </SafeAreaView>
+    ),
+    
+
+
         }}
       />
 
@@ -110,6 +131,7 @@ const styles = StyleSheet.create({
     paddingTop: 30,            
     paddingBottom: 15,        
     justifyContent: 'space-between', 
+    rowGap: 5,
   },
   headerTitleText: {
     color: '#fff',
@@ -133,8 +155,25 @@ const styles = StyleSheet.create({
   botoesHeader:{
       flexDirection: 'row', 
 
-  }
-});
+  },
+
+customHeaderUpdates:{
+ backgroundColor: '#000000',
+     height: hp('10%'),
+    width: '100%',
+    paddingHorizontal: 16,
+    paddingTop: 30,            
+    paddingBottom: 15,        
+    justifyContent: 'space-between', 
+  },
+
+  headerTitleTextUpdates:{
+color: "white",
+  },
+
+  
+
+})
 
 
     
