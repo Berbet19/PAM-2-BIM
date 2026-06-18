@@ -1,5 +1,13 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
+
+function MeuBotao({ buttontext }: { buttontext: string }) {
+  return (
+    <TouchableOpacity style={styles.estruturaBotao}>
+      <Text style={styles.textoDoItem}>{buttontext}</Text>
+    </TouchableOpacity>
+  );
+}
 
 export default function ProfileScreen() {
   return (
@@ -28,13 +36,36 @@ export default function ProfileScreen() {
   <Image style={styles.storys} source={require ('../../../assets/images/Contacts.png')}/>
 </View>
   </View>
+  <View style= {styles.titleCanais} >
+     <Text style={styles.title}>Canais</Text>
+     <MeuBotao buttontext="Seguir" />
+  </View>
 
-  <View style={styles.Rowcontainer}>
-      <Image style={styles.img} source={require ('../../../assets/images/Contacts.png')}/>
-      <Text style={styles.title}>Contato 1 </Text>
-      </View>
-      <Text style={styles.subtitle}><Ionicons name="checkmark-done-outline" size={15} color="grey" />Estou saindo!</Text>
-    
+   <View style={styles.contatos}>
+
+  
+          <View style={styles.itemContato}>
+            <View style={styles.Rowcontainer}>
+              <Image style={styles.img} source={require('../../../assets/images/Contacts.png')}/>
+              <Text style={styles.nomeCanal}>Contato 1</Text>
+            </View>
+            <Text style={styles.subtitle}>
+              <Ionicons name="checkmark-done-outline" size={15} color="grey" /> Estou saindo!
+            </Text>
+          </View>
+
+
+          <View style={styles.itemContato}>
+            <View style={styles.Rowcontainer}>
+              <Image style={styles.img} source={require('../../../assets/images/Contacts.png')}/>
+              <Text style={styles.nomeCanal}>Contato 1</Text>
+            </View>
+            <Text style={styles.subtitle}>
+              <Ionicons name="checkmark-done-outline" size={15} color="grey" /> Estou saindo!
+            </Text>
+         
+    </View>
+    </View>
     </View>
   );
 }
@@ -43,14 +74,14 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-   
+     padding: 10,
     backgroundColor: '#000000',
   },
   title: {
     fontSize: 20,
     fontWeight: "bold",
       color: "white",
-        paddingHorizontal: 16,
+    paddingHorizontal: 16,
     paddingTop: 30,            
     paddingBottom: 15,   
    
@@ -59,7 +90,7 @@ const styles = StyleSheet.create({
   },
 
   grid:{
-flex: 1,
+height: 130,
 flexDirection: "row",
 gap: 12,
 justifyContent: "center",
@@ -80,8 +111,9 @@ borderColor: "#3de038",
 },
 
  img:{
-    height:50,
-      width: 50,
+ height: 50,
+    width: 50,
+    borderRadius: 25, 
   },
  Rowcontainer :{
   flexDirection: 'row',
@@ -93,9 +125,50 @@ borderColor: "#3de038",
  },
 
  subtitle:{
-fontSize: 10,
-color: 'grey' ,
-flex: 1,
-paddingLeft: 60,
+ fontSize: 15,
+    color: 'grey',
+    paddingLeft: 60,
+    marginTop: -4, 
 },
+
+itemContato:{
+  marginBottom: 16,
+    width: '100%',
+},
+
+  contatos: {
+    flex: 1, 
+   marginTop: 15,
+  },
+
+  nomeCanal: {
+fontSize: 16, 
+color: "white",
+  },
+
+    estruturaBotao: {
+    paddingVertical: 6,
+    paddingHorizontal: 16,
+    borderRadius: 20, 
+    marginHorizontal: 5,
+    height: 35,
+    justifyContent: 'center',
+    borderColor: 'white',
+    borderStyle: 'solid',  
+    borderWidth: 0.5,
+    backgroundColor: "rgb(12, 59, 14)"
+  },
+
+  textoDoItem: {
+    color: '#fff',
+    fontSize: 14,
+  },
+
+  titleCanais:{
+  flexDirection : "row",
+  justifyContent: "space-between",
+  alignItems: "center"
+  },
+
+
 });
