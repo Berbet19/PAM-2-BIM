@@ -38,7 +38,7 @@ export default function ProfileScreen() {
   </View>
   <View style= {styles.titleCanais} >
      <Text style={styles.title}>Canais</Text>
-     <MeuBotao buttontext="Seguir" />
+     <MeuBotao buttontext="Descobrir" />
   </View>
 
    <View style={styles.contatos}>
@@ -47,7 +47,7 @@ export default function ProfileScreen() {
           <View style={styles.itemContato}>
             <View style={styles.Rowcontainer}>
               <Image style={styles.img} source={require('../../../assets/images/Contacts.png')}/>
-              <Text style={styles.nomeCanal}>Contato 1</Text>
+              <Text style={styles.nomeCanal}>Canal 1</Text>
             </View>
             <Text style={styles.subtitle}>
               <Ionicons name="checkmark-done-outline" size={15} color="grey" /> Estou saindo!
@@ -58,7 +58,7 @@ export default function ProfileScreen() {
           <View style={styles.itemContato}>
             <View style={styles.Rowcontainer}>
               <Image style={styles.img} source={require('../../../assets/images/Contacts.png')}/>
-              <Text style={styles.nomeCanal}>Contato 1</Text>
+              <Text style={styles.nomeCanal}>Canal 2</Text>
             </View>
             <Text style={styles.subtitle}>
               <Ionicons name="checkmark-done-outline" size={15} color="grey" /> Estou saindo!
@@ -66,6 +66,22 @@ export default function ProfileScreen() {
          
     </View>
     </View>
+
+            <View style={styles.find}>
+              <Text  style={styles.Textfind}>Encontrar canais para seguir</Text>
+            </View>
+
+            <View style={styles.canais}>
+                <View style={styles.itemCanal}>
+            <View style={styles.Rowcontainer}>
+              <Image style={styles.img} source={require('../../../assets/images/Contacts.png')}/>
+              <Text style={styles.nomeCanal}>Canal 2</Text>
+            </View>
+            <Text style={styles.subtitle}>
+              <Ionicons name="checkmark-done-outline" size={15} color="grey" /> Estou saindo!
+            </Text>
+            </View>
+            </View>
     </View>
   );
 }
@@ -153,10 +169,8 @@ color: "white",
     marginHorizontal: 5,
     height: 35,
     justifyContent: 'center',
-    borderColor: 'white',
-    borderStyle: 'solid',  
-    borderWidth: 0.5,
-    backgroundColor: "rgb(12, 59, 14)"
+   
+    backgroundColor: "#2e2828"
   },
 
   textoDoItem: {
@@ -168,6 +182,27 @@ color: "white",
   flexDirection : "row",
   justifyContent: "space-between",
   alignItems: "center"
+  },
+
+ Textfind:{
+    color:"grey",
+    fontSize : 15,
+  },
+
+  find:{
+flex: 1,
+marginTop: 20,
+
+  },
+
+  canais:{
+flex: 1,
+
+  },
+
+  itemCanal:{
+marginBottom: 10,
+    width: '100%',
   },
 
 

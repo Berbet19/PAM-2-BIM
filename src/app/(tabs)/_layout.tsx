@@ -104,6 +104,26 @@ export default function TabsLayout() {
         options={{
           title: 'Comunidades',
           tabBarIcon: ({ color }) => <MaterialIcons name="groups" size={26} color={color} />,
+
+
+ header: () => (
+      <SafeAreaView>
+       <View style={styles.customHeaderUpdates}>
+         <View style={styles.row}>
+        <Text style={styles.headerTitleText}>Atualizações</Text>
+        <View style={styles.botoesHeader}>
+        <Feather name="more-vertical" size={24} color="#a0c4c0" />
+       </View>
+        </View>
+         </View> 
+      </SafeAreaView>
+    ),
+
+
+
+
+
+
         }}
       />
 
@@ -141,11 +161,12 @@ const styles = StyleSheet.create({
   searchbar: {
     backgroundColor: '#054c43', 
     borderRadius: 22,           
-   height: 50,
+   height: 60,
     width: '100%',              
     paddingHorizontal: 16,
     color: '#fff',
     fontSize: 16,
+    borderColor: "black",
   },
   row:{
     flexDirection: 'row', 
