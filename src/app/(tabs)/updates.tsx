@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { Image, StyleSheet, Text, TouchableOpacity, View , ScrollView} from 'react-native';
 
 function MeuBotao({ buttontext }: { buttontext: string }) {
   return (
@@ -15,10 +15,13 @@ export default function ProfileScreen() {
 
     <View style={styles.container}>
 
- <Text style={styles.title}>Status</Text>
+<ScrollView
+  horizontal
+  showsHorizontalScrollIndicator={false}
+  style={{ marginBottom: 10 }} // Removeu o height fixo e adicionou margem embaixo
+  contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 10 }}
+>
 <View style={styles.grid}>
-
-   
 
   <View style={styles.status}>
   <Image style={styles.storys} source={require ('../../../assets/images/Contacts.png')}/>
@@ -36,6 +39,9 @@ export default function ProfileScreen() {
   <Image style={styles.storys} source={require ('../../../assets/images/Contacts.png')}/>
 </View>
   </View>
+  </ScrollView>
+
+
   <View style= {styles.titleCanais} >
      <Text style={styles.title}>Canais</Text>
      <MeuBotao buttontext="Descobrir" />
@@ -97,19 +103,17 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
       color: "white",
-    paddingHorizontal: 16,
-    paddingTop: 30,            
-    paddingBottom: 15,   
+paddingHorizontal: 16, 
    
 
 
   },
 
   grid:{
-height: 130,
+
 flexDirection: "row",
 gap: 12,
-justifyContent: "center",
+
 
   },
   status:{
@@ -144,7 +148,8 @@ borderColor: "#3de038",
  fontSize: 15,
     color: 'grey',
     paddingLeft: 60,
-    marginTop: -4, 
+    marginTop: 2, 
+    flex: 1, 
 },
 
 itemContato:{
@@ -153,7 +158,7 @@ itemContato:{
 },
 
   contatos: {
-    flex: 1, 
+   
    marginTop: 15,
   },
 
@@ -179,29 +184,35 @@ color: "white",
   },
 
   titleCanais:{
-  flexDirection : "row",
-  justifyContent: "space-between",
-  alignItems: "center"
+flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: -10,    
+    marginBottom: 10,
   },
 
  Textfind:{
-    color:"grey",
-    fontSize : 15,
+    
+    color: "grey",
+    fontSize: 15,
+    fontWeight: "500", 
+  
+ 
   },
 
   find:{
-flex: 1,
-marginTop: 20,
-
+marginTop: 25,       
+    marginBottom: 12,    
+    paddingHorizontal: 16,
   },
 
   canais:{
-flex: 1,
+
 
   },
 
   itemCanal:{
-marginBottom: 10,
+marginBottom: 16,
     width: '100%',
   },
 

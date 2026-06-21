@@ -45,7 +45,7 @@ export default function TabsLayout() {
   tabBarIcon: ({ color }) =>   <MaterialIcons name="comment" size={26} color={color} />,
     
     header: () => (
-      <SafeAreaView>
+      
       <View style={styles.customHeader}>
          <View style={styles.row}>
         <Text style={styles.headerTitleText}>WhatsApp</Text>
@@ -67,7 +67,7 @@ export default function TabsLayout() {
        
         
       </View> 
-      </SafeAreaView>
+    
     ),
     
   }} // 
@@ -110,7 +110,7 @@ export default function TabsLayout() {
       <SafeAreaView>
        <View style={styles.customHeaderUpdates}>
          <View style={styles.row}>
-        <Text style={styles.headerTitleText}>Atualizações</Text>
+        <Text style={styles.headerTitleText}>Comunidades</Text>
         <View style={styles.botoesHeader}>
         <Feather name="more-vertical" size={24} color="#a0c4c0" />
        </View>
@@ -133,7 +133,21 @@ export default function TabsLayout() {
         options={{
           title: 'Ligações',
           tabBarIcon: ({ color }) => <Feather name="phone" size={26} color={color} />,
-        }}
+        
+         header: () => (
+      <SafeAreaView>
+       <View style={styles.customHeaderUpdates}>
+         <View style={styles.row}>
+        <Text style={styles.headerTitleText}>Ligações</Text>
+        <View style={styles.botoesHeader}>
+          <Feather name="search" size={24} color="white" />
+        <Feather name="more-vertical" size={24} color="#a0c4c0" />
+       </View>
+        </View>
+         </View> 
+      </SafeAreaView>
+    ),
+   }}
       />
 
     </Tabs>
@@ -161,7 +175,7 @@ const styles = StyleSheet.create({
   searchbar: {
     backgroundColor: '#054c43', 
     borderRadius: 22,           
-   height: 60,
+   height: 75,
     width: '100%',              
     paddingHorizontal: 16,
     color: '#fff',

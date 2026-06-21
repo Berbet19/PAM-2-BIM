@@ -30,12 +30,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color:'#ffff',
     textAlign: "center",
+     marginTop: 50, 
   },
 
   subtitle:{
     color:'#ffff',
      fontSize: 15,
-  
+  marginTop: 10, 
        textAlign: 'center',
   },
   botao:{
@@ -44,6 +45,12 @@ alignContent: "center",
 borderRadius: 20,
 textAlign:"center",
 marginTop: 20, 
+flex: 1 ,
+alignItems: "center",
+width: 230,
+justifyContent: "center",
+alignSelf: "center",
+height:45,
   },
 
   img:{
