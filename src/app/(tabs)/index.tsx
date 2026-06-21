@@ -42,7 +42,7 @@ export default function HomeScreen() {
               <Text style={styles.title}>Contato 1</Text>
             </View>
             <Text style={styles.subtitle}>
-              <Ionicons name="checkmark-done-outline" size={15} color="rgb(47, 226, 250)" /> Estou saindo!
+              <Ionicons name="checkmark-done-outline" size={15} color="rgb(47, 226, 250)" />oi
             </Text>
           </View>
 
@@ -53,7 +53,7 @@ export default function HomeScreen() {
               <Text style={styles.title}>Contato 2</Text>
             </View>
             <Text style={styles.subtitle}> 
-              <Ionicons name="checkmark-done-outline" size={15} color="grey" /> HELLO
+              <Ionicons name="checkmark-done-outline" size={15} color="grey" /> ó o trabalho ai
             </Text>
           </View>
 
@@ -64,7 +64,7 @@ export default function HomeScreen() {
               <Text style={styles.title}>Contato 3</Text>
             </View>
             <Text style={styles.subtitle}>
-              <Ionicons name="checkmark-done-outline" size={15} color="grey" /> Nenhuma mensagem
+              <Ionicons name="checkmark-done-outline" size={15} color="grey" />Site chocante né
             </Text>
           </View>
 
@@ -75,7 +75,7 @@ export default function HomeScreen() {
               <Text style={styles.title}>Contato 4</Text>
             </View>
             <Text style={styles.subtitle}>
-              <Ionicons name="checkmark-done-outline" size={15} color="rgb(47, 226, 250)" /> Mensagem apagada
+              <Ionicons name="checkmark-done-outline" size={15} color="rgb(47, 226, 250)" /> Tem que ter talento
             </Text>
           </View>
 
@@ -86,7 +86,7 @@ export default function HomeScreen() {
               <Text style={styles.title}>Contato 5</Text>
             </View>
             <Text style={styles.subtitle}>
-                <Ionicons name="checkmark-done-outline" size={15} color="rgb(47, 226, 250)" /> oi</Text>
+                <Ionicons name="checkmark-done-outline" size={15} color="rgb(47, 226, 250)" /> React é bem legal</Text>
           </View>
 
          
@@ -96,7 +96,7 @@ export default function HomeScreen() {
               <Text style={styles.title}>Contato 6</Text>
             </View>
             <Text style={styles.subtitle}>
-               <Ionicons name="checkmark-done-outline" size={15} color="grey" />oi</Text>
+               <Ionicons name="checkmark-done-outline" size={15} color="grey" />Gostei de fazer</Text>
           </View>
 
          
@@ -106,7 +106,7 @@ export default function HomeScreen() {
               <Text style={styles.title}>Contato 7</Text>
             </View>
             <Text style={styles.subtitle}>
-                <Ionicons name="checkmark-done-outline" size={15} color="rgb(47, 226, 250)" /> oi</Text>
+                <Ionicons name="checkmark-done-outline" size={15} color="rgb(47, 226, 250)" /> ainda quero larguar o curso</Text>
           </View>
 
          
@@ -116,7 +116,7 @@ export default function HomeScreen() {
               <Text style={styles.title}>Contato 8</Text>
             </View>
             <Text style={styles.subtitle}>
-               <Ionicons name="checkmark-done-outline" size={15} color="grey" />oi</Text>
+               <Ionicons name="checkmark-done-outline" size={15} color="grey" />Tchau</Text>
           </View>
         </ScrollView>
       </View>
