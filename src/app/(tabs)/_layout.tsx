@@ -158,7 +158,7 @@ export default function TabsLayout() {
 }
 const styles = StyleSheet.create({
   customHeader: {
-    backgroundColor: '#075E54', // Todo o bloco será verde!
+    backgroundColor: '#075E54',
      height: hp('15%'),
     width: '100%',
     paddingHorizontal: 16,
