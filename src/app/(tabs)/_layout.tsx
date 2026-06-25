@@ -159,7 +159,7 @@ export default function TabsLayout() {
 const styles = StyleSheet.create({
   customHeader: {
     backgroundColor: '#075E54',
-     height: hp('15%'),
+     height: 130,
     width: '100%',
     paddingHorizontal: 16,
     paddingTop: 30,            
@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
   searchbar: {
     backgroundColor: '#054c43', 
     borderRadius: 22,           
-   height: 75,
+   height: 40,
     width: '100%',              
     paddingHorizontal: 16,
     color: '#fff',
@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
 
 customHeaderUpdates:{
  backgroundColor: '#000000',
-     height: hp('10%'),
+     height: 60,
     width: '100%',
     paddingHorizontal: 16,
     paddingTop: 30,            
