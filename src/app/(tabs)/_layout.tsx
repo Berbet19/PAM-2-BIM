@@ -4,7 +4,6 @@ import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import Octicons from '@expo/vector-icons/Octicons';
 import { Tabs } from 'expo-router';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
-import { heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { SafeAreaView, } from 'react-native-safe-area-context';
 
 
@@ -20,13 +19,13 @@ export default function TabsLayout() {
         tabBarInactiveTintColor: '#888',
         tabBarStyle: {
           backgroundColor: '#000',
-            height: hp('10%'),
+            height:65,
                borderTopWidth: 0, 
          
         },
         headerStyle: {
           backgroundColor: '#075E54',
-          height: hp('12%'),
+          height: 60,
       
         },
         
